@@ -1,8 +1,10 @@
+# Python-generated files
 __pycache__/
-*.pyc
-.venv/
-venv/
-.idea/
-.vscode/
-.DS_Store
-db.sqlite3
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv

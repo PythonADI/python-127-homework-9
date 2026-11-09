@@ -1,0 +1,19 @@
+[project]
+name = "submission-natkanatkanatui-github-natia-mamporia-workshop-8"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "natkanatkanatui1983", email = "ninimamporia19893@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6.1.3",
+]
+
+[project.scripts]
+submission-natkanatkanatui-github-natia-mamporia-workshop-8 = "submission_natkanatkanatui_github_natia_mamporia_workshop_8:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
