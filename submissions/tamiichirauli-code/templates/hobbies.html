@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hobbies</title>
+</head>
+<body>
+    <nav>
+    <a href="{% url 'home' %}">Home</a> |
+    <a href="{% url 'about' %}">About</a> |
+    <a href="{% url 'hobbies' %}">Hobbies</a>
+</nav>
+    <h1>my hobbies</h1>
+    <ul>
+        {% for hobby in hobbies%}
+        <li>{{ hobby.name}} - {{ hobby.hours}} hours a week</li>
+        {% endfor %}
+    </ul>
+    <p>i have {{hobbies | length}} hobbies </p>
+</body>
+</html>
